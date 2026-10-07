@@ -10,7 +10,7 @@ if ( file_exists( __DIR__ . '/wp-config-local.php' ) ) {
     // Production cPanel Database Configuration
     define( 'DB_NAME', 'earningin_pingdigital' );
     define( 'DB_USER', 'earningin_pingdigital' );
-    define( 'DB_PASSWORD', '5t*H?Ra=ae)]eEbS' );
+    define( 'DB_PASSWORD', '(d0,+Cdod_JL8ie0' );
     define( 'DB_HOST', 'localhost' );
 }
 
