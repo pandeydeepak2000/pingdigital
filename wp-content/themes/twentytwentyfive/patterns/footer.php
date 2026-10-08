@@ -60,7 +60,7 @@ $home_url = home_url( '/' );
 				</ul>
 			</div>
 
-			<div class="pdm-footer-col">
+			<div class="pdm-footer-col pdm-footer-newsletter-col">
 				<h4 class="pdm-footer-heading">Ping Growth Dispatch</h4>
 				<p class="pdm-newsletter-desc">
 					Get confidential weekly algorithmic teardowns, AI marketing strategies, and zero-click search breakdowns delivered straight to your inbox.
@@ -69,12 +69,19 @@ $home_url = home_url( '/' );
 					<input type="email" placeholder="Enter business email..." required class="pdm-newsletter-input" />
 					<button type="submit" class="pdm-newsletter-btn">Join 15,000+ Marketers &#8594;</button>
 				</form>
+				<span class="pdm-footer-ssl-note">&#128274; 256-Bit SSL Encrypted. Zero spam.</span>
 			</div>
 		</div>
 
 		<div class="pdm-footer-bottom">
 			<p>&copy; <?php echo date('Y'); ?> Ping Digital Marketing (pingdigitalmarketing.com). All rights reserved. Precision Growth Engineered.</p>
-			<p><a href="<?php echo esc_url( $home_url . 'wp-sitemap.xml' ); ?>" style="color: #64748b; text-decoration: none;">XML Sitemap</a></p>
+			<div class="pdm-footer-bottom-links">
+				<a href="<?php echo esc_url( $home_url . 'privacy-policy/' ); ?>">Privacy</a>
+				<span>&bull;</span>
+				<a href="<?php echo esc_url( $home_url . 'terms-of-service/' ); ?>">Terms</a>
+				<span>&bull;</span>
+				<a href="<?php echo esc_url( $home_url . 'wp-sitemap.xml' ); ?>">XML Sitemap</a>
+			</div>
 		</div>
 	</div>
 </footer>
