@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Title: List of posts, 1 column
  * Slug: twentytwentyfive/template-query-loop

@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Title: Footer
  * Slug: twentytwentyfive/footer

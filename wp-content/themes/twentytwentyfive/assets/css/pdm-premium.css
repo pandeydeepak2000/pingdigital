@@ -44,6 +44,8 @@
 html {
     scroll-behavior: smooth;
     box-sizing: border-box;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 *, *:before, *:after {
@@ -54,10 +56,27 @@ body {
     font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
     background-color: var(--pdm-bg) !important;
     color: var(--pdm-text) !important;
-    margin: 0;
-    padding: 0;
+    margin: 0 !important;
+    padding: 0 !important;
     line-height: 1.65;
     -webkit-font-smoothing: antialiased;
+    --wp--style--root--padding-top: 0px !important;
+}
+
+/* Eliminate any margin/padding gap above sticky header */
+.wp-site-blocks {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+
+:where(.wp-site-blocks) > :first-child,
+.wp-site-blocks > :first-child,
+.wp-site-blocks > header.wp-block-template-part,
+header.wp-block-template-part,
+.wp-block-template-part {
+    margin-top: 0 !important;
+    margin-block-start: 0 !important;
+    padding-top: 0 !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -139,11 +158,25 @@ a:hover {
     transition: all 0.3s ease;
 }
 
+.pdm-header {
+    background: rgba(255, 255, 255, 0.94) !important;
+    backdrop-filter: blur(16px) !important;
+    -webkit-backdrop-filter: blur(16px) !important;
+    border-bottom: 1px solid rgba(226, 232, 240, 0.85) !important;
+    position: sticky !important;
+    top: 0 !important;
+    margin-top: 0 !important;
+    z-index: 1000 !important;
+    box-shadow: 0 4px 25px -4px rgba(99, 102, 241, 0.07) !important;
+    width: 100% !important;
+    transition: all 0.3s ease;
+}
+
 .pdm-header-inner {
     max-width: 1240px !important;
     width: 100% !important;
     margin: 0 auto !important;
-    padding: 0.75rem 1.5rem !important;
+    padding: 0.5rem 1.5rem !important;
     display: flex !important;
     align-items: center !important;
     justify-content: space-between !important;
