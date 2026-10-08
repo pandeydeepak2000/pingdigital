@@ -140,10 +140,10 @@ a:hover {
 }
 
 .pdm-header-inner {
-    max-width: 1360px !important;
+    max-width: 1240px !important;
     width: 100% !important;
     margin: 0 auto !important;
-    padding: 0.85rem 2rem !important;
+    padding: 0.75rem 1.5rem !important;
     display: flex !important;
     align-items: center !important;
     justify-content: space-between !important;
@@ -158,22 +158,22 @@ a:hover {
 .pdm-brand .pdm-logo-link {
     display: flex !important;
     align-items: center !important;
-    gap: 0.9rem !important;
+    gap: 0.75rem !important;
     text-decoration: none !important;
 }
 
 .pdm-logo-img {
-    width: 46px !important;
-    height: 46px !important;
-    border-radius: 12px !important;
+    width: 42px !important;
+    height: 42px !important;
+    border-radius: 10px !important;
     object-fit: cover !important;
-    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.28) !important;
-    border: 1.5px solid rgba(99, 102, 241, 0.3) !important;
+    box-shadow: 0 4px 14px rgba(99, 102, 241, 0.25) !important;
+    border: 1.5px solid rgba(99, 102, 241, 0.25) !important;
     transition: transform 0.3s ease;
 }
 
 .pdm-logo-link:hover .pdm-logo-img {
-    transform: scale(1.06) rotate(-2deg);
+    transform: scale(1.05) rotate(-2deg);
 }
 
 .pdm-brand-text {
@@ -184,18 +184,18 @@ a:hover {
 
 .pdm-brand-title {
     font-family: 'Outfit', sans-serif !important;
-    font-size: 1.35rem !important;
+    font-size: 1.25rem !important;
     font-weight: 800 !important;
     color: var(--pdm-obsidian) !important;
-    letter-spacing: -0.03em !important;
+    letter-spacing: -0.02em !important;
 }
 
 .pdm-brand-sub {
-    font-size: 0.68rem !important;
+    font-size: 0.65rem !important;
     font-weight: 700 !important;
     text-transform: uppercase !important;
-    letter-spacing: 0.16em !important;
-    color: var(--pdm-muted) !important;
+    letter-spacing: 0.14em !important;
+    color: #64748b !important;
 }
 
 .pdm-nav {
@@ -206,7 +206,7 @@ a:hover {
 .pdm-nav-list {
     display: flex !important;
     align-items: center !important;
-    gap: 0.5rem !important;
+    gap: 0.35rem !important;
     list-style: none !important;
     margin: 0 !important;
     padding: 0 !important;
@@ -216,51 +216,66 @@ a:hover {
     font-family: 'Plus Jakarta Sans', sans-serif !important;
     font-size: 0.92rem !important;
     font-weight: 600 !important;
-    color: var(--pdm-text-secondary) !important;
-    padding: 0.55rem 1rem !important;
-    border-radius: 9999px !important;
+    color: #475569 !important;
+    padding: 0.5rem 0.85rem !important;
+    border-radius: 8px !important;
     text-decoration: none !important;
     transition: all 0.2s ease !important;
-    position: relative;
+    position: relative !important;
+    display: inline-flex !important;
+    align-items: center !important;
 }
 
 .pdm-nav-item:hover {
-    color: var(--pdm-primary) !important;
-    background: rgba(99, 102, 241, 0.08) !important;
+    color: var(--pdm-obsidian) !important;
+    background: #f1f5f9 !important;
 }
 
 .pdm-nav-item.active {
     color: var(--pdm-primary-dark) !important;
-    background: rgba(99, 102, 241, 0.12) !important;
+    background: transparent !important;
     font-weight: 700 !important;
+}
+
+.pdm-nav-item.active::after {
+    content: '' !important;
+    position: absolute !important;
+    bottom: -6px !important;
+    left: 0.85rem !important;
+    right: 0.85rem !important;
+    height: 2.5px !important;
+    background: var(--pdm-grad-primary) !important;
+    border-radius: 2px !important;
 }
 
 .pdm-header-actions {
     display: flex !important;
     align-items: center !important;
     gap: 1rem !important;
+    flex-shrink: 0 !important;
 }
 
 .pdm-btn-cta {
     display: inline-flex !important;
     align-items: center !important;
-    gap: 0.5rem !important;
-    background: var(--pdm-grad-primary) !important;
+    gap: 0.45rem !important;
+    background: linear-gradient(135deg, #4f46e5 0%, #06b6d4 100%) !important;
     color: #ffffff !important;
     font-family: 'Outfit', sans-serif !important;
-    font-size: 0.92rem !important;
+    font-size: 0.9rem !important;
     font-weight: 700 !important;
-    padding: 0.65rem 1.45rem !important;
-    border-radius: 9999px !important;
+    padding: 0.6rem 1.35rem !important;
+    border-radius: 10px !important;
     text-decoration: none !important;
-    box-shadow: 0 4px 18px rgba(99, 102, 241, 0.35) !important;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    box-shadow: 0 4px 16px rgba(99, 102, 241, 0.3) !important;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
     border: none !important;
+    white-space: nowrap !important;
 }
 
 .pdm-btn-cta:hover {
     transform: translateY(-2px) !important;
-    box-shadow: 0 8px 24px rgba(99, 102, 241, 0.5) !important;
+    box-shadow: 0 8px 24px rgba(99, 102, 241, 0.45) !important;
     color: #ffffff !important;
 }
 
@@ -1071,6 +1086,10 @@ a:hover {
         color: var(--pdm-primary-dark) !important;
         border-color: rgba(99, 102, 241, 0.35) !important;
         font-weight: 700 !important;
+    }
+
+    .pdm-header.pdm-mobile-open .pdm-nav-item.active::after {
+        display: none !important;
     }
 
     .pdm-header.pdm-mobile-open .pdm-nav-arrow {
